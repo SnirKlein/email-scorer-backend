@@ -4,9 +4,8 @@ FROM python:3.11-slim
 # Set the working directory
 WORKDIR /app
 
-# --- THE FIX: Install the C++ system dependency for LightGBM ---
+# Install the C++ system dependency for LightGBM
 RUN apt-get update && apt-get install -y libgomp1 && rm -rf /var/lib/apt/lists/*
-# ---------------------------------------------------------------
 
 # Copy the requirements file and install dependencies
 COPY requirements.txt .
