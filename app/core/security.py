@@ -3,7 +3,7 @@ import hashlib
 import json
 from fastapi import Request, HTTPException
 
-# Ensure this exactly matches the Apps Script constant
+# Shared secret for HMAC signing.
 SHARED_SECRET = "change-me-in-production"
 
 async def verify_addon_signature(request: Request):

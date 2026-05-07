@@ -96,7 +96,6 @@ def main():
             if os.path.isfile(file_path):
                 req = parse_eml_to_request(file_path)
                 if req:
-                    # Run it through your custom feature extractor!
                     features = extract_features(req)
                     raw_requests.append(features)
                     labels.append(is_malicious)

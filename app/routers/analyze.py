@@ -20,7 +20,7 @@ else:
 
 @router.post("/analyze", response_model=AnalyzeResponse, dependencies=[Depends(verify_addon_signature)])
 async def analyze_email(request: AnalyzeRequest):
-    # 1. Extract features using your pure functions
+    # 1. Extract features
     features = extract_features(request)
     
     # Safety check

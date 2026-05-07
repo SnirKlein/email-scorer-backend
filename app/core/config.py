@@ -9,7 +9,7 @@ class Settings(BaseSettings):
     # ML
     model_path: str = "models/classifier.joblib"
 
-    # Optional: Anthropic key for LLM-based explanation fallback
+    # Anthropic key for LLM-based explanation fallback
     anthropic_api_key: str = ""
 
     class Config:
