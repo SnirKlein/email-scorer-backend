@@ -1,0 +1,1 @@
+"Trade-offs & Future Work" section. Due to time constraints, I trained the model on the SpamAssassin corpus. In a production environment, I would swap this dataset out for a modern phishing and malware-focused dataset to better align with the 'Malicious' scorer objective.

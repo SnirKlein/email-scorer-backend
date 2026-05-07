@@ -2,3 +2,9 @@ fastapi
 uvicorn
 pydantic
 pydantic-settings
+scikit-learn
+lightgbm
+pandas
+joblib
+requests
+beautifulsoup4
