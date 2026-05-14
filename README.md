@@ -21,6 +21,6 @@ This project uses Dev Containers to guarantee a reproducible environment.
 6. Expose the local port via ngrok: `ngrok http 8000`
 
 ## Trade-offs & Future Work
-Given the time-boxed nature of this assignment, I made the following architectural decisions:
+I've made the following architectural decisions, to be updated in the next version:
 - **Dataset Selection:** The model is currently trained on the public **Apache SpamAssassin corpus**. This successfully demonstrates the end-to-end feature extraction and serving pipeline. However, in a production environment, this would be replaced with a modern threat-intelligence dataset strictly focused on phishing and malware payloads.
 - **Background Processing:** Right now, the backend processes emails on the spot, meaning the user's screen waits while the model "thinks." For larger emails, I would move this to a background queue (like Redis) so the model can run without freezing or timing out the user's interface.
